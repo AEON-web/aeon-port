@@ -2,6 +2,9 @@
   "name": "digital-dreams-ict-academy",
   "version": "1.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "description": "Digital Dreams ICT Academy website - Node.js + PostgreSQL.",
   "main": "server.js",
   "scripts": {
