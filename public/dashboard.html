@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | Digital Dreams ICT Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="toast" class="toast"></div>
+    <header class="site-header">
+      <a class="brand" href="/"
+        ><span class="brand-mark">D</span
+        ><span>DIGITAL DREAMS <small>ICT ACADEMY</small></span></a
+      >
+      <nav class="nav">
+        <a href="/">Website</a><a href="#review">Review</a
+        ><button id="logoutBtn" class="nav-logout">Logout</button>
+      </nav>
+    </header>
+    <main class="dashboard section">
+      <div class="dashboard-head">
+        <div>
+          <span class="eyebrow">STUDENT DASHBOARD</span>
+          <h1>Hello, <em id="studentName">Student</em> 👋</h1>
+          <p>
+            Track your registration details and explore your learning options.
+          </p>
+        </div>
+        <div class="status-badge">● Account active</div>
+      </div>
+      <div class="dashboard-grid">
+        <article class="dash-card">
+          <span>YOUR COURSE</span>
+          <h2 id="studentCourse">—</h2>
+          <p>Selected course of interest</p>
+        </article>
+        <article class="dash-card">
+          <span>EMAIL</span>
+          <h2 id="studentEmail">—</h2>
+          <p>Your registered email</p>
+        </article>
+        <article class="dash-card">
+          <span>REVIEWS</span>
+          <h2 id="reviewCount">0</h2>
+          <p>Reviews submitted</p>
+        </article>
+      </div>
+      <div class="dash-columns">
+        <section class="dash-panel">
+          <span class="eyebrow">INTERNSHIP</span>
+          <h2>Build <em>real experience.</em></h2>
+          <p>
+            Digital Dreams supports practical learning and may provide
+            work-placement opportunities with ICT firms, subject to availability
+            and academy arrangements.
+          </p>
+          <a
+            href="https://wa.me/2348076172758"
+            target="_blank"
+            class="btn btn-primary">
+            Ask About Internship</a>
+          
+        </section>
+        <section id="review" class="dash-panel">
+          <span class="eyebrow">REVIEW</span>
+          <h2>Share your <em>experience.</em></h2>
+          <form id="reviewForm">
+            <label>
+              Rating<select name="rating">
+                <option value="5">★★★★★ — 5</option>
+                <option value="4">★★★★☆ — 4</option>
+                <option value="3">★★★☆☆ — 3</option>
+                <option value="2">★★☆☆☆ — 2</option>
+                <option value="1">★☆☆☆☆ — 1</option>
+              </select></label>
+            <label>
+              Your review<textarea name="text" rows="4" required minlength="5">
+              </textarea></label>
+            <button class="btn btn-primary" type="submit">
+              Submit Review
+            </button> <button type="submit" class="btn"><a href="https://maps.app.goo.gl/UJxm6suZURS61AJW8">Review us on google</a></button>
+          </form>
+        </section>
+      </div>
+      <section class="dash-panel course-panel">
+        <span class="eyebrow">COURSES</span>
+        <h2>Explore the <em>academy catalogue.</em></h2>
+        <div id="dashboardCourses" class="mini-course-grid"></div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login | Digital Dreams ICT Academy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-page">
+    <div id="toast" class="toast"></div>
+    <header class="site-header">
+      <a class="brand" href="/"
+        ><span class="brand-mark">D</span
+        ><span>DIGITAL DREAMS <small>ICT ACADEMY</small></span></a>
+      
+      <nav class="nav">
+        <a href="/">Home</a><a href="register.html">Register</a>
+      </nav>
+    </header>
+    <main class="auth-wrap">
+      <div class="auth-card">
+        <span class="eyebrow">STUDENT PORTAL</span>
+        <h1>Welcome <em>back.</em></h1>
+        <p>Log in to access your Digital Dreams student dashboard.</p>
+        <form id="loginForm">
+          <label>
+            Email address<input type="email" name="email" required autocomplete="email" /></label>
+          <label>
+            Password<input type="password"name="password" required autocomplete="current-password" /></label>
+          <button class="btn btn-primary full" type="submit">Login</button>
+        </form>
+        <p class="auth-bottom">
+          New student? <a href="register.html">Create an account</a>
+        </p>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
