@@ -179,8 +179,7 @@ a{
 
 @media (max-width: 768px) {
     body{
-        justify-content: center;
-        
+        justify-content: center   
     }
     *{
         margin: 0;
